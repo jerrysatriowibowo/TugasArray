@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<center>
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th><h2><address>Menghitung Persegi</address></h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Masukan Sisi</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="ipt_Sisi"></td>
+			</tr>
+			<tr>
+				<td><button onclick="Hitung()">Hitung</button></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Luas Persegi</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="opt_Luas" disabled></td>
+			</tr>
+			<tr>
+				<td>Keliling Persegi</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="opt_Keliling" disabled></td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</center>
+    <script>
+        var Luas;
+        var Keliling;
+        var Sisi;
+    function Hitung() {
+	        Sisi = parseFloat(document.getElementById("ipt_Sisi").value);
+	        Luas = Sisi * Sisi;
+	        Keliling = 4 * Sisi;
+	        document.getElementById('opt_Luas').value = Luas;
+	        document.getElementById('opt_Keliling').value = Keliling;
+    }
+    </script>
+</body>
+</html>

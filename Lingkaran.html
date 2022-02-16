@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<center>
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th><h2><address>Menghitung Lingkaran</address></h2></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Masukan Jari - Jari</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="r"></td>
+			</tr>
+			<tr>
+				<td><button onclick="Hitung()">Hitung</button></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Luas Lingkaran</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="Luas" disabled></td>
+			</tr>
+			<tr>
+				<td>Keliling Lingkaran</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="Keliling" disabled></td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</center>
+    <script>
+        var Luas;
+        var Keliling;
+        var r;
+    function Hitung() {
+	        r = parseFloat(document.getElementById("r").value);
+	        Luas = 3.14 * r * r;
+	        Keliling = 3.14 * 2 * r;
+	        document.getElementById('Luas').value = Luas;
+	        document.getElementById('Keliling').value = Keliling;
+    }
+    </script>
+</body>
+</html>
